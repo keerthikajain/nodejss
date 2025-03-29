@@ -1,4 +1,6 @@
-const assert = require("assert");
-assert.strictEqual(1 + 1, 2);
-console.log("Test Passed!");
+const sum = require('./sum');
+
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});
 
